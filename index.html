@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('header-bg.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+    }
+    .cart-icon {
+      position: relative;
+    }
+    .cart-icon .badge {
+      position: absolute;
+      top: 0;
+      right: -5px;
+    }
+    .product-card img {
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light shadow-sm py-3 fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">FS.</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+      <div class="d-flex gap-3">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-heart"></i>
+        <i class="bi bi-person"></i>
+        <div class="cart-icon">
+          <i class="bi bi-bag"></i>
+          <span class="badge bg-danger rounded-pill">2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero d-flex align-items-center">
+  <div class="container text-white">
+    <h1 class="display-4 fw-bold">Summer Collection 2025</h1>
+    <p class="lead">Discover the latest trends in fashion and get exclusive offers on new arrivals.</p>
+    <a class="btn btn-light" href="#">Shop Now</a>
+  </div>
+</header>
+
+<!-- Featured Products -->
+<section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-3">Featured Products</h2>
+      <p class="text-muted mb-5">Discover our best-selling items and exclusive offers.</p>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card position-relative h-100">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">Sale</span>
+            <img src="product1.jpg" class="card-img-top" alt="Summer Dress" />
+            <div class="card-body text-start">
+              <h5 class="card-title">Summer Dress</h5>
+              <p>
+                <s class="text-muted">$59.99</s>
+                <span class="text-danger fw-bold">$39.99</span>
+              </p>
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <a href="#" class="btn btn-outline-dark w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card position-relative h-100">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">Sale</span>
+            <img src="product2.jpg" class="card-img-top" alt="Summer Dress" />
+            <div class="card-body text-start">
+              <h5 class="card-title">Summer Dress</h5>
+              <p>
+                <s class="text-muted">$49.99</s>
+                <span class="text-danger fw-bold">$29.99</span>
+              </p>
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <a href="#" class="btn btn-outline-dark w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card position-relative h-100">
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">Sale</span>
+            <img src="product3.jpg" class="card-img-top" alt="Summer Dress" />
+            <div class="card-body text-start">
+              <h5 class="card-title">Summer Dress</h5>
+              <p>
+                <s class="text-muted">$69.99</s>
+                <span class="text-danger fw-bold">$49.99</span>
+              </p>
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <a href="#" class="btn btn-outline-dark w-100">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <!-- Brand -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+          <h5 class="fw-bold text-uppercase">FashionStore</h5>
+          <p>Tujuan utama Anda untuk tren fashion terbaru. Belanja sekarang dan nikmati penawaran eksklusif!</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+  
+        <!-- Shop Links -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Belanja</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Wanita</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Pria</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Anak-anak</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Aksesori</a></li>
+          </ul>
+        </div>
+  
+        <!-- Info Links -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Informasi</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Tentang Kami</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Hubungi Kami</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Kontak</h6>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>123 Jakarta, Indonesia</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>+62 812 5678 4566</p>
+          <p><i class="bi bi-envelope-fill me-2"></i>info@fashionstore.com</p>
+        </div>
+      </div>
+      <hr class="text-white" />
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 <strong>FashionStore</strong>. Hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
